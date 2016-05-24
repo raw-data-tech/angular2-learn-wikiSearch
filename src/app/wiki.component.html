@@ -1,3 +1,6 @@
-<h1>
-  {{title}}
-</h1>
+<div>
+  <input type="text" [ngFormControl]="term">
+  <ul>
+    <li *ngFor="let i of items | async">{{i}}</li>
+  </ul>
+</div>
